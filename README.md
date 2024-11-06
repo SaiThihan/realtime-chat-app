@@ -1,29 +1,36 @@
-# vue-chat-app
+# Vue Chat App
 
-This template should help get you started developing with Vue 3 in Vite.
+A real-time chat application built with Vue 3, Vite, and Firebase.
 
-## Recommended IDE Setup
+## Prerequisites
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Node.js](https://nodejs.org/) (version 14 or later)
+- [Firebase Project](https://firebase.google.com/) with Firestore and Authentication enabled
 
-## Customize configuration
+## Getting Started
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+Follow these steps to set up and run the project locally.
 
-## Project Setup
+### 1. Clone the Repository
 
-```sh
-npm install
-```
+  - git clone https://github.com/SaiThihan/realtime-chat-app.git
+  - cd realtime-chat-app
 
-### Compile and Hot-Reload for Development
+### 2. Install Dependencies
+Use npm to install the required dependencies:
 
-```sh
-npm run dev
-```
+- npm install
 
-### Compile and Minify for Production
+### 3. Configure Firebase
+Add Firebase configuration to the .env file. Replace each placeholder with your actual Firebase configuration values:
 
-```sh
-npm run build
-```
+    VITE_API_KEY=your_api_key_here
+    VITE_AUTH_DOMAIN=your_auth_domain_here
+    VITE_PROJECT_ID=your_project_id_here
+    VITE_STORAGE_BUCKET=your_storage_bucket_here
+    VITE_MESSAGING_SENDER_ID=your_messaging_sender_id_here
+    VITE_APP_ID=your_app_id_here
+
+### 4. Run the Application
+
+- npm run dev
